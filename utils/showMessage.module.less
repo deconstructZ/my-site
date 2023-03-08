@@ -1,0 +1,40 @@
+@import "../src/styles/mixin.less";
+@import "~@/styles/var.less";
+
+.message {
+    .self-center();
+    z-index: 999;
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 30px 30px;
+    box-shadow: -4px 4px 5px rgba(0, 0, 0, .5);
+    color: #fff;
+    line-height: 2px;
+    align-items: center;
+    background: lightcoral;
+    transform: translate(-50%, -50%) translateY(20px);
+    opacity: 0;
+    transition: .5s;
+
+    &-warn {
+        background: @warn ;
+    }
+
+    &-info {
+        background: @primary;
+    }
+
+    &-error {
+        background: @danger;
+    }
+
+    &-success {
+        background: @success;
+    }
+}
+.icon{
+    margin-right:7px;
+    font-size: 20px;
+}
